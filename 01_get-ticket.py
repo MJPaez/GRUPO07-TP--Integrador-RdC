@@ -7,7 +7,7 @@ api_url = "http://localhost:58002/api/v1/ticket"
 headers = {
     "content-type": "application/json"
 }
-# ---- AJUSTADO A LA RED DEL GRUPO 07 (username/password) ----
+# ---- AJUSTADO AL USERNAME/ PASSWORD DEL GRUPO 07 ----
 body_json = {
     "username": "admin",
     "password": "cisco123"
