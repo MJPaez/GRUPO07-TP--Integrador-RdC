@@ -3,11 +3,12 @@ import requests #Para entender solicitudes
 import json #Para reconocer el formato json
 from tabulate import * #Para crear tablas
 
-baseUri = "http://localhost:58000/api/v1" #URL de PT
+# ---- AJUSTADO A LA RED DEL GRUPO 07 (puerto 58002) ----
+baseUri = "http://localhost:58002/api/v1" #URL de PT
 
 # Llamada al API por el ticket
 headers = {"Content-Type": "application/json"} #Headers
-data = json.dumps({"username": "cisco", "password": "cisco123!"}) #Credenciales
+data = json.dumps({"username": "admin", "password": "cisco123"}) #Credenciales # ---- AJUSTADO AL USERNAME/ PASSWORD DEL GRUPO 07 ----
 resp = requests.post(baseUri+"/ticket", data=data, headers=headers) #URL específica
 
 print("Status de Solicitud:")
