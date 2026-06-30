@@ -1,11 +1,13 @@
 import json
 import requests
+
+# ---- AJUSTADO A LA RED DEL GRUPO 07 (puerto 58002) ----
 api_url = "http://localhost:58002/api/v1/ticket"
 
 headers = {
     "content-type": "application/json"
 }
-
+# ---- AJUSTADO A LA RED DEL GRUPO 07 (username/password) ----
 body_json = {
     "username": "admin",
     "password": "cisco123"
